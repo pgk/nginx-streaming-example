@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx_rtmp:
+    build: ./nginx_rtmp
+    ports:
+     - "3110:80"
+     - "1993:1993"
+    volumes:
+     - ./nginx_rtmp/conf/nginx.conf:/usr/local/nginx/conf/nginx.conf
+     - ./nginx_rtmp/html/video:/usr/local/nginx/html/video
