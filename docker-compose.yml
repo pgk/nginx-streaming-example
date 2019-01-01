@@ -8,4 +8,6 @@ services:
     volumes:
      - ./nginx_rtmp/conf/nginx.conf:/usr/local/nginx/conf/nginx.conf
      - ./nginx_rtmp/html/video:/usr/local/nginx/html/video
+     - ./nginx_rtmp/html/crossdomain.xml:/usr/local/nginx/html/crossdomain.xml
      - ./nginx_rtmp/videos:/usr/local/nginx/html/videos
+

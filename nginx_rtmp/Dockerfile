@@ -22,10 +22,13 @@ RUN set -x \
 RUN ln -sf /dev/stdout /usr/local/nginx/logs/access.log \
 	&& ln -sf /dev/stderr /usr/local/nginx/logs/error.log
 
+RUN mkdir -p /tmp/dash
+
 EXPOSE 80
 EXPOSE 443
 # for streams
 EXPOSE 9099
+EXPOSE 1935
 
 STOPSIGNAL SIGTERM
 
