@@ -4,7 +4,8 @@ services:
     build: ./nginx_rtmp
     ports:
      - "3110:80"
-     - "1993:1993"
+     - "1935:1935"
     volumes:
      - ./nginx_rtmp/conf/nginx.conf:/usr/local/nginx/conf/nginx.conf
      - ./nginx_rtmp/html/video:/usr/local/nginx/html/video
+     - ./nginx_rtmp/videos:/usr/local/nginx/html/videos
