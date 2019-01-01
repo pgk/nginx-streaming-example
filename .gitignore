@@ -230,4 +230,6 @@ tags
 
 # </genignore vim>
 
-
+*.mp4
+*.webm
+*.avi
